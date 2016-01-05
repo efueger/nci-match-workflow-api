@@ -16,6 +16,7 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require "codeclimate-test-reporter"
 
 require 'webmock/rspec'
 require 'rack/test'
@@ -35,7 +36,7 @@ SimpleCov.formatters = [
 ]
 
 SimpleCov.start
-
+CodeClimate::TestReporter.start
 RSpec.configure do |config|
   config.include Rack::Test::Methods
   # rspec-expectations config goes here. You can use an alternate
