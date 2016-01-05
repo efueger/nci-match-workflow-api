@@ -29,6 +29,8 @@ require 'simplecov'
 require 'simplecov-json'
 require 'simplecov-rcov'
 
+ENV['CODECLIMATE_REPO_TOKEN'] = "0a2f2817c06be73088f923011c1bb3e504424dfa8ae0d030bc9a9f91dab9fd05"
+
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
   SimpleCov::Formatter::JSONFormatter,
